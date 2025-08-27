@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/pokeball-icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="PokéDex Pro - The ultimate Pokémon encyclopedia with advanced features, battle simulator, team builder, and comprehensive Pokémon data." />
+    <meta name="keywords" content="pokemon, pokedex, battle simulator, team builder, pokemon stats, evolution chain" />
+    <meta name="author" content="sharondelya" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="PokéDex Pro - Ultimate Pokémon Encyclopedia" />
+    <meta property="og:description" content="Explore the world of Pokémon with our comprehensive Pokédex featuring battle simulator, team builder, and advanced search capabilities." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/sharondelya/pokedex-pro" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PokéDex Pro - Ultimate Pokémon Encyclopedia" />
+    <meta name="twitter:description" content="Explore the world of Pokémon with our comprehensive Pokédex featuring battle simulator, team builder, and advanced search capabilities." />
+    
+    <title>PokéDex Pro - Ultimate Pokémon Encyclopedia</title>
+    
+    <!-- Preconnect to external domains for better performance -->
+    <link rel="preconnect" href="https://pokeapi.co" />
+    <link rel="preconnect" href="https://raw.githubusercontent.com" />
+    
+    <!-- Custom CSS for Pokemon font and additional styles -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500;600;700&display=swap');
+      
+      :root {
+        --pokemon-red: #FF0000;
+        --pokemon-blue: #0075BE;
+        --pokemon-yellow: #FFDE00;
+      }
+      
+      .pokemon-font {
+        font-family: 'Orbitron', 'Exo 2', system-ui, sans-serif;
+      }
+      
+      .loading-pokeball {
+        animation: spin 2s linear infinite;
+      }
+      
+      @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 4px;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 4px;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+      
+      /* Dark mode scrollbar */
+      .dark ::-webkit-scrollbar-track {
+        background: #374151;
+      }
+      
+      .dark ::-webkit-scrollbar-thumb {
+        background: #6b7280;
+      }
+      
+      .dark ::-webkit-scrollbar-thumb:hover {
+        background: #9ca3af;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
